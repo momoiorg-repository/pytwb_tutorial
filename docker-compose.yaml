@@ -1,0 +1,16 @@
+services:
+  pytwb-app:
+    image: pytwb-app-image
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        ROS_DISTRO: humble
+    network_mode: host
+    ipc: host
+    environment:
+      - DISPLAY=:${DISPLAY}
+    volumes:
+      - ./pytwb_ws:/root/pytwb_ws:rw
+    command: sleep infinity
+
