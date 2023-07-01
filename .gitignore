@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 .devcontainer/
+pytwb_ws/src/
 
 # C extensions
 *.so

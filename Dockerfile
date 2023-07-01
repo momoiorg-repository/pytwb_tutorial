@@ -14,3 +14,6 @@ WORKDIR /usr/local/lib
 RUN git clone https://github.com/momoiorg-repository/pytwb.git
 WORKDIR /usr/local/lib/pytwb
 RUN source /opt/ros/humble/setup.bash && pip3 install -e .
+
+WORKDIR /root
+COPY ./tutorial tutorial

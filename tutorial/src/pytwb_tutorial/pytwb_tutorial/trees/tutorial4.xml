@@ -1,0 +1,12 @@
+<root>
+    <BehaviorTree ID="tutorial4">
+        <Sequence name="main">
+            <tutorial3 />
+            <GoToPose name="revisit_coke"/>
+            <Watch name="watch_coke"/>
+            <ScheduleDestination name="schedule_final_target"/>
+            <GoToPose name="reach"/>
+            <Viewer name="final_view" mode="one_shot" />
+        </Sequence>
+    </BehaviorTree>
+</root>

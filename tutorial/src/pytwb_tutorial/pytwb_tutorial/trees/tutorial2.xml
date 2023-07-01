@@ -1,0 +1,11 @@
+<root>
+    <BehaviorTree ID="tutorial2">
+        <Sequence name="main">
+            <SetBlackboard name="set_bloackboard" key="target_pose" value="[(4.0, 0.0, 0.0)]"/>
+            <Parallel name="seek_and_go" policy="SuccessOnOne">
+                <LookForCoke name="look_coke"/>
+                <GoToPose name="go_to_loc"/>
+            </Parallel>
+        </Sequence>
+    </BehaviorTree>
+</root>
