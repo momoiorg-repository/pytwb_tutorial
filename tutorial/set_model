@@ -1,0 +1,1 @@
+docker cp ./model.sdf turtlebot3_behavior_demos-demo-world-1:/opt/ros/humble/share/turtlebot3_gazebo/models/turtlebot3_waffle_pi

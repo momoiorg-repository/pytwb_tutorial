@@ -3,7 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 .devcontainer/
-pytwb_ws/src/
+pytwb_ws/src/pytwb_mydemo/
+_config
+_Dockerfile
 
 # C extensions
 *.so

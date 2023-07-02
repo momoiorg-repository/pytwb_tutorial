@@ -12,10 +12,7 @@ class SetBlackboard(py_trees.behaviour.Behaviour):
         self.value = value
     
     def initialise(self) -> None:
-        value = self.value
-        if value.startswith('[') and value.endswith(']'):
-            value = eval(value)
-        self.bb.set(self.key, value)
+        self.bb.set(self.key, self.value)
     
     def update(self):
         return py_trees.common.Status.SUCCESS
