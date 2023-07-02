@@ -38,6 +38,9 @@ And by inputting
 
 the “sample” package will be created.
 
+## Tutorial
+- [tutorial](doc/tutorial.md)
+
 ## Document
 - [overview](doc/overview.md)
 ## Sample code
