@@ -162,15 +162,19 @@ tutorial2.xml
 </root>
 ```
 
-Here 'Parallel' is used to execute child nodes in parallel. LookForCoke analyzes the camera image and measures the center coordinates of any red objects found. Here, it is used for monitoring Coke cans. Monitor and move the Coke cans in parallel, and if either succeeds, it will end. So the resulting status is SUCCESS anyway. The point here is that if a Coke can is found in the middle of the move, the move and among other things the behavior tree execution will end. When the next move command is issued, the current move operation will be cancelled.
+Here 'Parallel' is used to execute child nodes in parallel. LookForCoke analyzes the camera image and measures the center coordinates of any red objects found. Here, it is used for monitoring Coke cans. Monitor and move the Coke cans in parallel, and if either succeeds, it will end. The point here is that if a Coke can is found in the middle of the move, the move and among other things the behavior tree execution will end. When the next move command is issued, the current move operation will be cancelled.
 
-"If a Coke can is found, the following message will appear in the log display."
+If a Coke can is found, the following message will appear in the log display.  The behavior 'go_to_loc' aborts because a cola can is found on the way to target.  
 
-On the other hand, if it doesn't find it, it looks like this:
+![cola can found](resource/tutorial2_success.jpg)
+
+On the other hand, if it doesn't find it, it looks like this:  
+
+![cola can not found](resource/tutorial2_fail.jpg)
 
 In this state, from the pytwb command prompt,  
 \> bb glanced_point val.x val.y  
-will display the x,y coordinates of the found Coke can saved on the blackboard. where val is an object representing the obtained point and the value of evaluating the expressions val.x, val.y is displayed.
+will display the x,y coordinates of the found Coke can saved on the blackboard. 'val' is an object representing the obtained point and the evaluated values of the expressions val.x, val.y are displayed.
 
 ### Calculation of movement candidates
 Until now, the robot's destination for exploration was set to a fixed value in advance, but we will change to get a good point of view. In tutorial3.xml, it receives map information, analyzes its structure by the vector_map library, and automatically calculates multiple candidate points with good visibility. The 4th line in tutorial2.xml is replaced by the following 2 lines in tutorial3.xml.
