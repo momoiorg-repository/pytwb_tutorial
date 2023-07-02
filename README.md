@@ -12,7 +12,7 @@ First, you need to retrieve the pytwb module.
 
 ```
 git clone https://github.com/momoiorg-repository/pytwb_tutorial.git
-cd pytwb
+cd pytwb_tutorial
 ```
 (at "pytwb_tutorial" directory)  
 start VSCode by "code ."  
