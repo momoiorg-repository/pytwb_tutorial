@@ -147,6 +147,8 @@ You should be able to see the robot start moving on the Gazebo screen. Walk 4 me
 ### Camera check while moving
 Next, let's look for a Coke can with the camera while moving. To try this out, you'll need to place a Coke can in Gazebo's simulation area.  
 
+![adding Coke can](resource/coke.jpg)
+
 tutorial2.xml  
 ```
 <root>
