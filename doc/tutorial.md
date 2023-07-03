@@ -95,8 +95,8 @@ Open another WSL terminal and set the DISPLAY environment variable correctly. In
 After this,  
 \$ git clone https://github.com/sea-bass/turtlebot3_behavior_demos.git  
 \$ cd turtlebot3_behavior_demo  
-\$ git compose build  
-\$ git compose up demo-world  
+\$ docker compose build  
+\$ docker compose up demo-world  
 
 These should bring up the Gazebo and Rviz screens.
 
