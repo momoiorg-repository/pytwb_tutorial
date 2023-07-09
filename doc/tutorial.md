@@ -94,14 +94,14 @@ Open another WSL terminal and set the DISPLAY environment variable correctly. In
 
 After this,  
 \$ git clone https://github.com/sea-bass/turtlebot3_behavior_demos.git  
-\$ cd turtlebot3_behavior_demo  
+\$ cd turtlebot3_behavior_demos  
 \$ docker compose build  
 \$ docker compose up demo-world  
 
 These should bring up the Gazebo and Rviz screens.
 
 In addition, in order to switch the camera of turtlebot3 to simulate to Realsense, rewrite the sdf file in the running turtlebot3_behavior_demos docker. From the command prompt on the WSL side, run:  
-\$ cd pytwb_tutorial  
+\$ cd pytwb_tutorial/tutorial  
 \$ ./set_model  
 \$ docker restart turtlebot3_behavior_demos-demo-world-1  
 
